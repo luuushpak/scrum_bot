@@ -7,6 +7,8 @@ const CHAT_ID = process.env.CHAT_ID;
 
 const MEET_LINK = "https://meet.google.com/umz-cmon-tse";
 
+console.log("BOT STARTED 🚀");
+
 function formatDate() {
   return new Date().toLocaleDateString("uk-UA");
 }
