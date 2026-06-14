@@ -35,7 +35,7 @@ function getOptions() {
 
 function getMessage(isFinalReminder = false) {
   return `
-🔔 Scrum Meeting Reminder ///// TEEEEEEST
+🔔 Scrum Meeting Reminder
 
 👋 Привіт, командо!
 
