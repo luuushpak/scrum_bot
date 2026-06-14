@@ -1,13 +1,26 @@
 import "dotenv/config";
 import TelegramBot from "node-telegram-bot-api";
 import cron from "node-cron";
+import express from "express";
 
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: false });
 const CHAT_ID = process.env.CHAT_ID;
 
 const MEET_LINK = "https://meet.google.com/umz-cmon-tse";
 
-console.log("BOT STARTED 🚀");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Bot is running 🚀");
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Web server running on port ${PORT}`);
+});
+
+console.log("BOT IS RUNNING 🚀");
 
 function formatDate() {
   return new Date().toLocaleDateString("uk-UA");
