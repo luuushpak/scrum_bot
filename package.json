@@ -1,0 +1,26 @@
+{
+  "name": "scrum_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luuushpak/scrum_bot.git"
+  },
+  "keywords": [],
+  "author": "luuushpak <lushpak0111@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/luuushpak/scrum_bot/issues"
+  },
+  "homepage": "https://github.com/luuushpak/scrum_bot#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "node-cron": "^4.2.1",
+    "node-telegram-bot-api": "^1.1.0"
+  }
+}
